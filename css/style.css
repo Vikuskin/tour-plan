@@ -2,4 +2,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-family: 'Meli', serif;
+}
 /*# sourceMappingURL=style.css.map */
