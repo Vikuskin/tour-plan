@@ -784,13 +784,19 @@ template {
   overflow: hidden;
 }
 
+.parallax-window {
+  width: 100%;
+  background: transparent;
+  min-height: 315px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  /*background-image: url(../img/newsletter-bg.jpg) */
+  /*background-repeat: no-repeat */
+  /*background-size: cover */
+  /*background-position: center*/
 }
 
 .newsletter::before {
@@ -800,8 +806,8 @@ template {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  z-index: 99;
+  height: 315px;
   background-color: rgba(10, 34, 61, 0.8);
 }
 
@@ -834,6 +840,7 @@ template {
   line-height: 30px;
   max-width: 250px;
   word-break: break-all;
+  z-index: 99;
 }
 
 .newsletter-title__strong {
@@ -842,12 +849,14 @@ template {
   line-height: 45px;
   text-transform: uppercase;
   word-break: break-all;
+  z-index: 99;
 }
 
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 99;
 }
 
 .subscribe__input {

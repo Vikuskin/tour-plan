@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -234,23 +236,33 @@
       </div>
     </section>
     <!-- /.hotel -->
-    <section class="newsletter">
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
-          subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
-        </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email address"
-          />
-          <button class="subscribe__button">Send</button>
-        </form>
-      </div>
-      <!-- /.newsletter-wrapper -->
-    </section>
+    <div
+      class="parallax-window"
+      data-parallax="scroll"
+      data-image-src="img/newsletter-bg.jpg"
+      data-speed="0.7"
+      data-natural-width="2880"
+      data-natural-height="1913"
+    >
+      <section class="newsletter">
+        <div class="newsletter-wrapper">
+          <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-title__strong">Newsletter</span>
+          </h2>
+          <form action="#" class="subscribe newsletter__subscribe">
+            <input
+              type="text"
+              class="subscribe__input"
+              placeholder="Your email address"
+            />
+            <button class="subscribe__button">Send</button>
+          </form>
+        </div>
+
+        <!-- /.newsletter-wrapper -->
+      </section>
+    </div>
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people thinks about us</h2>
