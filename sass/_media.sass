@@ -2,12 +2,14 @@
   .container
     max-width: 1000px
   .hotel
-    &-slide
-      width: 1200px
-    &__img
-      height: 100%
-      width: 100%
-      object-fit: cover
+    &-slider
+      width: 600px
+      margin: 0
+      &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -49,7 +51,7 @@
   .reviews
     &-slider
       &__item
-        max-width: 580px
+
 @media (max-width: 780px)
   .logo
     width: 132px
@@ -111,6 +113,9 @@
       align-items: flex-start
   .reviews
     padding: 40px 0 60px 0
+    &__title
+      font-size: 30px
+      margin-bottom: 50px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -138,7 +143,7 @@
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px
+      min-height: 250px
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -169,8 +174,11 @@
       font-size: 20px
   .reviews
     padding: 40px 0 50px 0
+    &__title
+      font-size: 18px
+      margin-bottom: 42px
     &-slider
       &__item
         padding: 0 30px 30px
       &__text
-        max-width: 220px
+        min-width: 220px

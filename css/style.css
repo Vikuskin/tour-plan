@@ -578,6 +578,7 @@ template {
 }
 
 .hotel-slider {
+  width: 728px;
   height: 450px;
 }
 
@@ -645,6 +646,11 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.swiper-container {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .booking {
@@ -880,6 +886,7 @@ template {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 70px;
+  word-break: break-all;
 }
 
 .reviews-slider__item {
@@ -897,7 +904,7 @@ template {
   border-radius: 8px;
   max-width: 730px;
   margin: 45px auto 0;
-  padding: 0 62px 30px;
+  padding: 0 0 30px 0;
   position: relative;
 }
 
@@ -980,12 +987,16 @@ template {
   color: #EC1F46;
   margin-bottom: 10px;
   margin-top: 0;
+  max-width: 150px;
+  word-break: break-all;
 }
 
 .reviews-slider__date {
   font-size: 10px;
   line-height: 13px;
   margin-bottom: 4px;
+  max-width: 150px;
+  word-break: break-all;
 }
 
 .reviews-slider__rating {
@@ -1009,10 +1020,11 @@ template {
   .container {
     max-width: 1000px;
   }
-  .hotel-slide {
-    width: 1200px;
+  .hotel-slider {
+    width: 600px;
+    margin: 0;
   }
-  .hotel__img {
+  .hotel-slider__img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -1074,9 +1086,6 @@ template {
   }
   .newsletter {
     padding: 92px 0 93px 0;
-  }
-  .reviews-slider__item {
-    max-width: 580px;
   }
 }
 
@@ -1176,6 +1185,10 @@ template {
   .reviews {
     padding: 40px 0 60px 0;
   }
+  .reviews__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1213,7 +1226,7 @@ template {
     margin-bottom: 20px;
   }
   .hotel-slider {
-    height: 250px;
+    min-height: 250px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -1254,11 +1267,15 @@ template {
   .reviews {
     padding: 40px 0 50px 0;
   }
+  .reviews__title {
+    font-size: 18px;
+    margin-bottom: 42px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
   .reviews-slider__text {
-    max-width: 220px;
+    min-width: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */

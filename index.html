@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,10 +12,6 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=80b066aa-5aff-4f52-9b3b-4cdc28cc4c7c&lang=en_US"
-      type="text/javascript"
-    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -138,35 +134,35 @@
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
                 <img
-                  class="hotel-slide__img"
+                  class="hotel-slider__img"
                   src="img/slide-1.jpg"
                   alt="Slide-1"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
-                  class="hotel-slide__img"
+                  class="hotel-slider__img"
                   src="img/slide-2.jpg"
                   alt="Slide-2"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
-                  class="hotel-slide__img"
+                  class="hotel-slider__img"
                   src="img/slide-3.jpg"
                   alt="Slide-3"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
-                  class="hotel-slide__img"
+                  class="hotel-slider__img"
                   src="img/slide-4.jpg"
                   alt="Slide-4"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
-                  class="hotel-slide__img"
+                  class="hotel-slider__img"
                   src="img/slide-5.jpg"
                   alt="Slide-5"
                 />
@@ -221,7 +217,15 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div id="map"></div>
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0046814309244!2d79.80141631419708!3d7.574466994537756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1615496798836!5m2!1sru!2sru"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -285,6 +289,76 @@
                 </p>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-2.jpg"
+                    alt="Photo: avatar-2"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Ilon Mask</h3>
+                  <span class="reviews-slider__date">Stayed 25 Jan, 2018</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                  </div>
+                  <!--rating-->
+                </div>
+                <!--reviews-slider__profile-->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat provident delectus amet reprehenderit hic id.
+                  Ducimus, vitae reprehenderit? Accusantium maiores placeat
+                  quasi, rerum impedit dignissimos laborum nemo obcaecati
+                  incidunt dicta tempore cumque fugiat quo beatae eos dolore
+                  numquam hic nulla officia quia. Eum facere nihil dolore optio
+                  sunt nemo, accusamus neque. Laborum magnam impedit ut soluta
+                  necessitatibus similique unde nisi dicta sapiente dolor
+                  veritatis aliquam non aspernatur in id quos, provident saepe
+                  repellendus, nostrum perspiciatis nemo sit est. Dolores
+                  temporibus numquam non itaque consequuntur laborum quis
+                  nesciunt unde nulla nihil eligendi, libero sint. Possimus, nam
+                  aut mollitia debitis libero reprehenderit?
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-3.jpg"
+                    alt="Photo: avatar-3"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Richard Hehdricks</h3>
+                  <span class="reviews-slider__date">Stayed 31 Oct, 2020</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" />
+                  </div>
+                  <!--rating-->
+                </div>
+                <!--reviews-slider__profile-->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+            </div>
             <!-- /.swiper-slide -->
           </div>
           <!--/.swiper-wrapper-->
@@ -300,6 +374,5 @@
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/yandex-map.js"></script>
   </body>
 </html>
