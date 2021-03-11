@@ -816,47 +816,57 @@ template {
 
 .newsletter-title {
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  max-width: 250px;
+  word-break: break-all;
 }
 
 .newsletter-title__strong {
-  display: block;
   font-size: 36px;
+  max-width: 250px;
   line-height: 45px;
   text-transform: uppercase;
+  word-break: break-all;
 }
 
 .subscribe {
-  position: relative;
-  width: 355px;
-  height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .subscribe__input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  min-width: 285px;
+  height: 55px;
   border: none;
   padding-left: 33px;
-  padding-right: 75px;
+  padding-right: 20px;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
 }
 
 .subscribe__button {
-  position: absolute;
-  right: 0;
-  top: 0;
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
   min-width: 65px;
-  height: 100%;
+  max-width: 150px;
+  min-height: 55px;
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  word-break: break-all;
 }
 
 @media (max-width: 1200px) {
