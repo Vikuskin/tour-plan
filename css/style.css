@@ -771,7 +771,7 @@ template {
   cursor: pointer;
 }
 
-.map {
+#map {
   width: 347px;
   height: 213px;
   border-radius: 10px;
@@ -838,7 +838,7 @@ template {
   .booking {
     width: 340px;
   }
-  .map {
+  #map {
     width: 340px;
   }
   .slider {
@@ -925,7 +925,7 @@ template {
   .booking {
     width: 100%;
   }
-  .map {
+  #map {
     width: 100%;
   }
 }
@@ -945,7 +945,7 @@ template {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .container {
     max-width: 265px;
     width: 92%;
