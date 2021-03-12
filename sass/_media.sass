@@ -49,10 +49,20 @@
   .newsletter
     padding: 92px 0 93px 0
   .reviews
+    &__title
+      font-size: 30px
+      margin-bottom: 50px
     &-slider
       &__item
-
-@media (max-width: 780px)
+@media (max-width: 890px)
+  .container,
+  .newsletter-wrapper
+    max-width: 820px
+@media (max-width: 840px)
+  .container,
+  .newsletter-wrapper
+    max-width: 770px
+@media (max-width: 790px)
   .logo
     width: 132px
   .container
@@ -113,9 +123,6 @@
       align-items: flex-start
   .reviews
     padding: 40px 0 60px 0
-    &__title
-      font-size: 30px
-      margin-bottom: 50px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -172,6 +179,9 @@
     &__title
       margin-bottom: 37px
       font-size: 20px
+  .subscribe
+    &__input
+      max-width: 215px
   .reviews
     padding: 40px 0 50px 0
     &__title
@@ -182,3 +192,4 @@
         padding: 0 30px 30px
       &__text
         min-width: 220px
+        text-align: left
