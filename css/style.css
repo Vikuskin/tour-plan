@@ -793,6 +793,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
+  min-height: 315px;
   /*background-image: url(../img/newsletter-bg.jpg) */
   /*background-repeat: no-repeat */
   /*background-size: cover */
@@ -807,7 +808,7 @@ template {
   right: 0;
   bottom: 0;
   z-index: 99;
-  height: 315px;
+  height: 100%;
   background-color: rgba(10, 34, 61, 0.8);
 }
 
@@ -1136,7 +1137,7 @@ template {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .container,
   .newsletter-wrapper {
     max-width: 860px;
@@ -1414,7 +1415,7 @@ template {
     padding: 40px 0 0 0;
   }
   .reviews__title {
-    font-size: 18px;
+    font-size: 99%;
     margin-bottom: 42px;
   }
   .reviews-slider__item {
