@@ -649,8 +649,9 @@ template {
 }
 
 .swiper-container {
-  width: 100%;
+  position: relative;
   border-radius: 8px;
+  margin-left: 0;
 }
 
 .booking {
@@ -1364,7 +1365,7 @@ template {
     margin-bottom: 20px;
   }
   .hotel-slider {
-    min-height: 250px;
+    min-height: 180px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
