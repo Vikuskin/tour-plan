@@ -416,6 +416,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -808,7 +812,7 @@ template {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 90;
   height: 100%;
   background-color: rgba(10, 34, 61, 0.8);
 }
@@ -842,7 +846,7 @@ template {
   line-height: 30px;
   max-width: 250px;
   word-break: break-all;
-  z-index: 99;
+  z-index: 95;
 }
 
 .newsletter-title__strong {
@@ -851,14 +855,14 @@ template {
   line-height: 45px;
   text-transform: uppercase;
   word-break: break-all;
-  z-index: 99;
+  z-index: 95;
 }
 
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 99;
+  z-index: 95;
 }
 
 .subscribe__input {
@@ -1527,8 +1531,66 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .newsletter__subscribe--mobile {
+    display: block;
+  }
+  .subscribe__input--mobile {
+    width: 185px;
+  }
+  .subscribe__button--mobile {
+    width: 65px;
   }
   .menu-button {
     display: -webkit-box;
@@ -1555,6 +1617,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
@@ -1744,6 +1811,12 @@ template {
 }
 
 @media (max-width: 480px) {
+  .navbar__search--mobile--visible {
+    width: 243px;
+  }
+  .search__button--mobile--visible {
+    width: 65px;
+  }
   .footer__input {
     width: 300px;
   }
