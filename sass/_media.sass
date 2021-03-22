@@ -216,6 +216,7 @@
   .modal
     &__dialog
       max-width: 400px
+      padding: 33px 60px
     &__title
       min-width: 170px
     &__form
@@ -378,6 +379,9 @@
     &__inf
       text-align: left
 @media (max-width: 576px)
+  .modal
+    &__dialog
+      padding: 33px 70px
   .grid-card
     min-height: 300px
   .card1
@@ -473,6 +477,9 @@
   .card
     width: 100%
 @media (max-width: 480px)
+  .modal
+    &__dialog
+      padding: 33px 50px
   .other-packages
     &__grid-container
       grid-template-columns: 1fr
@@ -586,7 +593,15 @@
     &__title
       font-size: 18px
       margin-bottom: 36px
+@media (max-width: 420px)
+  .modal
+    &__dialog
+      padding: 33px 50px
 @media (max-width: 370px)
+  .modal
+    &__dialog
+      padding: 33px 40px
+      min-width: 266px
   .other-packages
     padding-top: 0
     &__title
@@ -601,7 +616,3 @@
       font-size: 10px
       width: 50px
       height: 30px
-  .modal
-    &__dialog
-      padding: 33px 70px
-      max-width: 300px
