@@ -39,24 +39,30 @@ menuButton.on("click", function () {
 
 $('.parallax-window').parallax({imageSrc: '../img/newsletter-bg.jpg'});
 
-  var modalButton = $("[data-toggle=modal]");
-  var closeModalButton = $(".modal__close");
-  modalButton.on("click", openModal);
-  closeModalButton.on("click", closeModal);
+var modalButton = $("[data-toggle=modal]");
+var closeModalButton = $(".modal__close");
+var closeModalOverlay = $(".modal__overlay");
+modalButton.on("click", openModal);
+closeModalButton.on("click", closeModal);
+closeModalOverlay.on("click", closeModal);
 
-  function openModal() {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.addClass('modal__overlay--visible');
-    modalDialog.addClass('modal__dialog--visible');
-  }
-  function closeModal(event) {
-    event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass('modal__overlay--visible');
-    modalDialog.removeClass('modal__dialog--visible');
-  }
+function openModal() {
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  var body = $("body");
+  modalOverlay.addClass('modal__overlay--visible');
+  modalDialog.addClass('modal__dialog--visible');
+  body.addClass('modal-open');
+}
+function closeModal(event) {
+  event.preventDefault();
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  var body = $("body");
+  modalOverlay.removeClass('modal__overlay--visible');
+  modalDialog.removeClass('modal__dialog--visible');
+  body.removeClass('modal-open');
+}
   
   $(document).on('keydown',function(event) {
    if (event.keyCode == 27) {
@@ -65,5 +71,11 @@ $('.parallax-window').parallax({imageSrc: '../img/newsletter-bg.jpg'});
       modalOverlay.removeClass('modal__overlay--visible');
       modalDialog.removeClass('modal__dialog--visible');
     }
+
+$("#myModal").on("click", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});
 });
 });
