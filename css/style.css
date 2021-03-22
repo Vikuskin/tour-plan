@@ -2046,7 +2046,13 @@ template {
 
 @media (max-width: 790px) {
   .modal__dialog {
-    width: 478px;
+    max-width: 400px;
+  }
+  .modal__title {
+    min-width: 170px;
+  }
+  .modal__form {
+    min-width: 170px;
   }
   .card2-top {
     height: 200px;
@@ -2262,9 +2268,6 @@ template {
 }
 
 @media (max-width: 576px) {
-  .modal__dialog {
-    width: 400px;
-  }
   .grid-card {
     min-height: 300px;
   }
@@ -2416,9 +2419,6 @@ template {
 }
 
 @media (max-width: 480px) {
-  .modal__dialog {
-    width: 350px;
-  }
   .other-packages__grid-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2604,8 +2604,8 @@ template {
     height: 30px;
   }
   .modal__dialog {
-    width: 300px;
-    padding: 30px;
+    padding: 33px 70px;
+    max-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
