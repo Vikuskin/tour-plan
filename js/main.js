@@ -33,8 +33,10 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 });
 
 var menuButton = $(".menu-button");
+var body = $("body");
 menuButton.on("click", function () {
-  $(".navbar-bottom").toggleClass("navbar-bottom--visible")
+  $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+  body.toggleClass("modal-open");
 });
 
 $('.parallax-window').parallax({imageSrc: '../img/newsletter-bg.jpg'});
@@ -77,5 +79,38 @@ $("#myModal").on("click", function () {
 }).on("hidden", function () {
   $("body").removeClass("modal-open")
 });
+});
+
+//обработка форм 
+$(".form").each(function () {
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must be at least 2 characters long"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "Phone is required",
+    },
+  },
+});
+  $(".subscribe").validate({
+    errorClass: "form-subscribe",
+    messages: {
+      subscribe: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      }
+    }
+  });
+})
+
+$(document).ready(function(){
+  $('.telephone').mask('+7 (999) 999-99-99');
 });
 });

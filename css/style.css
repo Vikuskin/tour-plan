@@ -35,6 +35,14 @@ img {
   padding: 18px 23px;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
+.form-subscribe {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1136,35 +1144,41 @@ template {
 }
 
 .subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
   z-index: 95;
+  width: 355px;
+  height: 55px;
+  border-radius: 4px;
 }
 
 .subscribe__input {
-  max-width: 285px;
-  height: 55px;
+  width: 100%;
+  height: 100%;
   border: none;
   padding-left: 33px;
-  padding-right: 20px;
+  padding-right: 75px;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  border-radius: 4px 0 0 4px;
+  position: relative;
   overflow: hidden;
+  border-radius: 4px 4px 4px 4px;
+  margin-bottom: 5px;
 }
 
 .subscribe__button {
-  border-radius: 0 4px 4px 0;
   overflow: hidden;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
   min-width: 65px;
-  max-width: 150px;
-  min-height: 55px;
+  height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
   word-break: break-all;
+  z-index: 97;
 }
 
 .reviews {
@@ -1538,6 +1552,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1573,6 +1591,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1655,15 +1674,17 @@ template {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
+  overflow-y: auto;
+  max-height: 90vh;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  overflow-y: auto;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
   width: 70%;
+  overflow-y: auto;
 }
 
 .modal__close {
@@ -1685,13 +1706,14 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .modal__button {
@@ -1705,6 +1727,8 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1712,6 +1736,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  margin-bottom: 30px;
 }
 
 .modal__required {
@@ -1748,7 +1773,7 @@ template {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1869,9 +1894,9 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2260,7 +2285,7 @@ template {
   .footer__legal {
     margin-left: 0;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2412,9 +2437,6 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
-  .subscribe {
-    width: 100%;
-  }
   .activities {
     padding-top: 10px;
   }
@@ -2424,6 +2446,9 @@ template {
 }
 
 @media (max-width: 480px) {
+  .subscribe {
+    max-width: 280px;
+  }
   .modal__dialog {
     padding: 33px 50px;
   }
@@ -2507,6 +2532,9 @@ template {
     min-width: 120px;
     min-height: 40px;
   }
+  .navbar-bottom {
+    top: 73px;
+  }
   .navbar__search--mobile--visible {
     width: 243px;
   }
@@ -2514,7 +2542,7 @@ template {
     width: 65px;
   }
   .footer__input {
-    width: 300px;
+    width: 100%;
   }
   .footer__message {
     width: 300px;
@@ -2569,9 +2597,6 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
     font-size: 20px;
-  }
-  .subscribe__input {
-    max-width: 215px;
   }
   .reviews {
     padding: 40px 0 0 0;

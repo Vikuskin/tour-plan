@@ -46,26 +46,34 @@
       word-break: break-all
       z-index: 95
 .subscribe
-  display: flex
+  position: relative
   z-index: 95
+  width: 355px
+  height: 55px
+  border-radius: 4px
   &__input
-    max-width: 285px
-    height: 55px
+    width: 100%
+    height: 100%
     border: none
     padding-left: 33px
-    padding-right: 20px
+    padding-right: 75px
     font-weight: 300
     font-size: 14px
     line-height: 18px
-    border-radius: 4px 0 0 4px
+    position: relative
     overflow: hidden
+    border-radius: 4px 4px 4px 4px
+    margin-bottom: 5px
   &__button
-    border-radius: 0 4px 4px 0
     overflow: hidden
+    border-radius: 0 4px 4px 0
+    position: absolute
+    top: 0
+    right: 0
     min-width: 65px
-    max-width: 150px
-    min-height: 55px
+    height: 100%
     border: none
     background-color: $primary
     color: $light
     word-break: break-all
+    z-index: 97
