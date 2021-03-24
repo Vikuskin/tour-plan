@@ -105,13 +105,18 @@ $(".form").each(function () {
       subscribe: {
         required: "We need your email address to contact you",
         email: "Your email address must be in the format of name@domain.com"
-      }
-    }
-  });
+      },
+    },
+
 })
 
-$(document).ready(function(){
-  $('.telephone').mask('+7 (999) 999-99-99');
+
+$('.telephone').mask("+7(000)000-00-00", {
+      translation: {
+        placeholder: "(000)000-00-00"
+      }
+    });
 });
+
 AOS.init();
 });
