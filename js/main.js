@@ -73,13 +73,24 @@ function closeModal(event) {
       modalOverlay.removeClass('modal__overlay--visible');
       modalDialog.removeClass('modal__dialog--visible');
     }
+    });
 
 $("#myModal").on("click", function () {
-  $("body").addClass("modal-open");
-}).on("hidden", function () {
-  $("body").removeClass("modal-open")
+  $("body").toggleClass("modal-open");
 });
+$("#myModalActivity1").on("click", function () {
+  $("body").toggleClass("modal-open");
 });
+$("#myModalActivity2").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+$("#myModalActivity3").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+$("#myModalActivity4").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+
 
 //обработка форм 
 $(".form").each(function () {
