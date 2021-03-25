@@ -687,6 +687,11 @@ template {
   line-height: 18px;
 }
 
+.rating__small {
+  font-size: 11px;
+  margin-left: -4px;
+}
+
 .swiper-container {
   position: relative;
   border-radius: 8px;
@@ -1453,9 +1458,9 @@ template {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer__categories {
@@ -1571,6 +1576,16 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__input {
@@ -1725,9 +1740,10 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .modal__input {
@@ -2060,7 +2076,39 @@ template {
 @media (max-width: 840px) {
   .container,
   .newsletter-wrapper {
-    max-width: 770px;
+    max-width: 700px;
+  }
+  .hotel {
+    padding-bottom: 60px;
+  }
+  .activities {
+    padding-bottom: 55px;
+  }
+  .footer {
+    padding-top: 73px;
+  }
+  .footer__logo {
+    width: 104px;
+    height: 120px;
+  }
+  .footer__legal {
+    margin-left: 13%;
+  }
+  .footer__additional {
+    width: 246px;
+    margin-left: -35px;
+  }
+  .footer__categories {
+    width: 178px;
+  }
+  .footer__social-network {
+    margin-left: -50px;
+  }
+  .footer__contact-form {
+    max-width: 539px;
+  }
+  .footer__bottom {
+    margin-top: 63px;
   }
   .card1-right {
     padding: 26px 20px 20px 23px;
@@ -2086,6 +2134,9 @@ template {
     width: 90px;
     height: 40px;
     padding: 0;
+  }
+  .other-packages__title {
+    margin-bottom: 40px;
   }
   .other-packages__grid-container {
     -ms-grid-columns: (auto)[2];
@@ -2144,7 +2195,7 @@ template {
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 767px) {
   .modal__dialog {
     max-width: 400px;
     padding: 33px 60px;
@@ -2356,7 +2407,17 @@ template {
     width: 49%;
     height: 255px;
   }
+  .footer-wrapper {
+    grid-row-gap: 33px;
+  }
   .footer__legal {
+    margin-left: 0;
+  }
+  .footer__additional {
+    margin-left: 0;
+    width: 190px;
+  }
+  .footer__social-network {
     margin-left: 0;
   }
   .footer__input-group {
@@ -2509,7 +2570,9 @@ template {
     margin-bottom: 37px;
   }
   .activities {
-    padding-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
   }
   .card {
     width: 100%;
@@ -2613,10 +2676,11 @@ template {
     width: 65px;
   }
   .footer__input {
-    width: 100%;
+    width: 96%;
   }
   .footer__message {
-    width: 300px;
+    -ms-flex-preferred-size: 96%;
+        flex-basis: 96%;
   }
   .footer__required {
     -ms-flex-wrap: wrap-reverse;
@@ -2646,8 +2710,7 @@ template {
             flex-direction: flex-start;
   }
   .container {
-    min-width: 280px;
-    width: 92%;
+    width: 87%;
   }
   .logo {
     width: 99px;
@@ -2656,11 +2719,18 @@ template {
     padding-top: 28px;
     padding-bottom: 28px;
   }
+  .hotel-grid {
+    padding-top: 18px;
+  }
   .hotel-slider {
     height: 180px;
   }
+  .parallax-window {
+    height: 319px;
+  }
   .newsletter {
     padding: 76px 0 83px 0;
+    height: 319px;
   }
   .newsletter-title__strong {
     font-size: 30px;
@@ -2670,11 +2740,12 @@ template {
     font-size: 20px;
   }
   .reviews {
-    padding: 40px 0 0 0;
+    padding: 40px 0 50px 0;
   }
   .reviews__title {
-    font-size: 99%;
+    font-size: 120%;
     margin-bottom: 42px;
+    line-height: 23px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -2682,6 +2753,12 @@ template {
   .reviews-slider__text {
     min-width: 220px;
     text-align: left;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -90px;
+  }
+  .reviews-slider__button--next {
+    margin-right: -90px;
   }
   .activities__title {
     font-size: 18px;

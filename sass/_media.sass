@@ -218,7 +218,29 @@
 @media (max-width: 840px)
   .container,
   .newsletter-wrapper
-    max-width: 770px
+    max-width: 700px
+  .hotel
+    padding-bottom: 60px
+  .activities
+    padding-bottom: 55px
+  .footer
+    padding-top: 73px
+    &__logo
+      width: 104px
+      height: 120px
+    &__legal
+      margin-left: 13%
+    &__additional
+      width: 246px
+      margin-left: -35px
+    &__categories
+      width: 178px
+    &__social-network
+      margin-left: -50px
+    &__contact-form
+      max-width: 539px
+    &__bottom
+      margin-top: 63px
   .card1
     &-right
       padding: 26px 20px 20px 23px
@@ -241,6 +263,8 @@
       height: 40px
       padding: 0
   .other-packages
+    &__title
+      margin-bottom: 40px
     &__grid-container
       grid-template-columns: repeat(2, auto)
       grid-template-rows: repeat(4, auto)
@@ -266,7 +290,7 @@
   .other-4,
   .other-5
     width: 100%
-@media (max-width: 790px)
+@media (max-width: 767px)
   .modal
     &__dialog
       max-width: 400px
@@ -424,13 +448,21 @@
     width: 49%
     height: 255px
   .footer
+    &-wrapper
+      grid-row-gap: 33px
     &__legal
+      margin-left: 0
+    &__additional
+      margin-left: 0
+      width: 190px
+    &__social-network
       margin-left: 0
     &__input
       &-group
         flex-basis: 100%
     &__inf
       text-align: left
+
 @media (max-width: 576px)
   .modal
     &__dialog
@@ -523,7 +555,9 @@
     &__title
       margin-bottom: 37px
   .activities
-    padding-top: 10px
+    padding-top: 40px
+    padding-bottom: 40px
+    margin: 0
   .card
     width: 100%
 @media (max-width: 480px)
@@ -593,9 +627,9 @@
           width: 65px
   .footer
     &__input
-      width: 100%
+      width: 96%
     &__message
-      width: 300px
+      flex-basis: 96%
     &__required
       flex-wrap: wrap-reverse
       width: 180px
@@ -610,19 +644,23 @@
       position: relative
       flex-direction: flex-start
   .container
-    min-width: 280px
-    width: 92%
+    width: 87%
   .logo
     width: 99px
   .navbar
     &-top
       padding-top: 28px
       padding-bottom: 28px
+  .hotel-grid
+    padding-top: 18px
   .hotel
     &-slider
       height: 180px
+  .parallax-window
+    height: 319px
   .newsletter
     padding: 76px 0 83px 0
+    height: 319px
     &-title
       &__strong
         font-size: 30px
@@ -630,16 +668,22 @@
       margin-bottom: 37px
       font-size: 20px
   .reviews
-    padding: 40px 0 0 0
+    padding: 40px 0 50px 0
     &__title
-      font-size: 99%
+      font-size: 120%
       margin-bottom: 42px
+      line-height: 23px
     &-slider
       &__item
         padding: 0 30px 30px
       &__text
         min-width: 220px
         text-align: left
+      &__button
+        &--prev
+          margin-left: -90px
+        &--next
+          margin-right: -90px
   .activities
     &__title
       font-size: 18px
