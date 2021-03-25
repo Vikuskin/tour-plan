@@ -4,7 +4,7 @@
     max-width: 1000px
   .hotel
     &-slider
-      width: 600px
+      max-width: 635px
       margin: 0
       &__img
         height: 100%
@@ -130,57 +130,87 @@
       &-form
         grid-column: span 5
         grid-row: 4
-@media (max-width: 992px)
+@media (max-width: 991px)
   .card
     &__button
       cursor: default
+      &:hover
+        opacity: 1
   .footer
     &__button
       cursor: default
+      &:hover
+        opacity: 1
   .search
     &__button
       cursor: default
+      &:hover
+        opacity: 1
   .booking
     &__button
       cursor: default
+      &:hover
+        opacity: 1
   .hotel
     &-slider
       &__button
         cursor: default
+        &:hover
+          opacity: 1
   .modal
     &__close
       cursor: default
+      &:hover
+        opacity: 1
   .subscribe
     &__button
       cursor: default
+      &:hover
+        opacity: 1
   .buy
     &__button
       cursor: default
+      &:hover
+        opacity: 1
   .reviews
     &-slider
       &__button
         cursor: default
+        &:hover
+          opacity: 1
   .logo
     &__image
       cursor: default
+      &:hover
+        opacity: 1
   .user
     &__avatar,
     &__name
       cursor: default
+      &:hover
+        opacity: 1
   .navbar
     &-menu
       &__link
         cursor: default
+        &:hover
+          opacity: 1
   .breadcrumb
     &-list
       &__link
         cursor: default
+        &:hover
+          opacity: 1
   .footer
     &__link
       cursor: default
+      &:hover
+        opacity: 1
   .booking
     &__number
       cursor: default
+      &:hover
+        opacity: 1
 @media (max-width: 890px)
   .container,
   .newsletter-wrapper
@@ -449,8 +479,10 @@
     height: 255px
   .footer
     &-wrapper
-
       grid-row-gap: 33px
+    &__contact
+      &-details
+        margin-left: 0
     &__legal
       margin-left: 0
     &__additional

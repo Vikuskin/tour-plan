@@ -90,6 +90,22 @@ $("#myModalActivity3").on("click", function () {
 $("#myModalActivity4").on("click", function () {
   $("body").toggleClass("modal-open");
 });
+$("#myModalOther1").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+$("#myModalOther2").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+$("#myModalOther3").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+$("#myModalOther4").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+$("#myModalOther5").on("click", function () {
+  $("body").toggleClass("modal-open");
+});
+
 
 
 //обработка форм 
@@ -107,9 +123,28 @@ $(".form").each(function () {
     },
     phone: {
       required: "Phone is required",
+      minlength: "The name must be at least 11 characters long"
     },
   },
 });
+$(".modal__form").validate({
+    errorClass: "form-subscribe",
+    messages: {
+      name_modal: {
+      required: "Please specify your name",
+      minlength: "The name must be at least 2 characters long"
+    },
+    email_modal: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone_modal: {
+      required: "Phone is required",
+      minlength: "The name must be at least 11 characters long"
+    },
+    },
+
+})
   $(".subscribe").validate({
     errorClass: "form-subscribe",
     messages: {

@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="preload"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -22,7 +22,12 @@
     <header class="navbar navbar-mobile navbar-mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
+          <a
+            href="index.html"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -331,7 +336,13 @@
               <span class="price-old">$ 10,500</span>
               <div class="buy">
                 <span class="buy__now">$ 8,500</span>
-                <button class="button buy__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  id="myModalOther1"
+                  class="button buy__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
             <!--right-->
@@ -367,7 +378,13 @@
               <span class="price-old">$ 8,500</span>
               <div class="buy">
                 <span class="buy__now">$ 3,000</span>
-                <button class="button buy__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  id="myModalOther2"
+                  class="button buy__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
             <!--right-->
@@ -403,7 +420,13 @@
               <span class="price-old">$ 10,500</span>
               <div class="buy">
                 <span class="buy__now">$ 9,500</span>
-                <button class="button buy__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  id="myModalOther3"
+                  class="button buy__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
             <!--right-->
@@ -439,7 +462,13 @@
               <span class="price-old">$ 4,500</span>
               <div class="buy">
                 <span class="buy__now">$ 2,500</span>
-                <button class="button buy__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  id="myModalOther4"
+                  class="button buy__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
             <!--right-->
@@ -475,7 +504,13 @@
               <span class="price-old">$ 6,500</span>
               <div class="buy">
                 <span class="buy__now">$ 3,500</span>
-                <button class="button buy__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  id="myModalOther5"
+                  class="button buy__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
             <!--right-->
@@ -646,7 +681,9 @@
               alt="The curious corner of chamarel"
               class="card__image"
             />
-            <h3 class="card__title">The curious corner of chamarel</h3>
+            <h3 class="card__title activity-1">
+              The curious corner of chamarel
+            </h3>
             <button
               data-toggle="modal"
               id="myModalActivity1"
@@ -666,7 +703,7 @@
               alt="Gymkhana club golf course"
               class="card__image"
             />
-            <h3 class="card__title">Gymkhana club golf course</h3>
+            <h3 class="card__title activity-2">Gymkhana club golf course</h3>
             <button
               data-toggle="modal"
               id="myModalActivity2"
@@ -686,7 +723,9 @@
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
-            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+            <h3 class="card__title activity-3">
+              Tamarind falls hiking trip - full day
+            </h3>
             <button
               data-toggle="modal"
               id="myModalActivity3"
@@ -706,7 +745,9 @@
               alt="The blue marine discovery quest"
               class="card__image"
             />
-            <h3 class="card__title">The blue marine discovery quest</h3>
+            <h3 class="card__title activity-4">
+              The blue marine discovery quest
+            </h3>
             <button
               data-toggle="modal"
               id="myModalActivity4"
@@ -723,7 +764,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="logo footer__logo">
+          <a href="index.html" class="logo footer__logo">
             <img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -789,11 +830,11 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="https://ru-ru.facebook.com/" class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebook" /></a
-              ><a href="#" class="footer__link"
+              ><a href="https://www.youtube.com/" class="footer__link"
                 ><img src="img/youtube.svg" alt="Icon: youtube" /></a
-              ><a href="#" class="footer__link"
+              ><a href="https://www.instagram.com/" class="footer__link"
                 ><img src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
@@ -945,7 +986,7 @@
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
-            name="name"
+            name="name_modal"
             minlength="2"
             required
           />
@@ -953,7 +994,7 @@
             type="tel"
             class="input modal__input telephone"
             placeholder="Phone Number*"
-            name="phone"
+            name="phone_modal"
             data-mask="+7(000)000-00-00"
             data-mask-reverse="true"
             minlength="16"
@@ -963,13 +1004,13 @@
             type="email"
             class="input modal__input"
             placeholder="Email*"
-            name="email"
+            name="email_modal"
             required
           />
           <textarea
             class="message modal__message"
             placeholder="Message"
-            name="message"
+            name="message_modal"
           ></textarea>
           <div class="modal__required">
             <button class="button modal__button" type="submit">Send</button>
