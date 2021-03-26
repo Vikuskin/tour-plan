@@ -22,7 +22,21 @@
       padding: 30px 21px 20px 43px
     &__title
       margin-bottom: 14px
-@media (max-width: 992px)
+@media (max-width: 991px)
+  .other-packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+  .reviews
+    &__title
+      font-size: 30px
+      margin-bottom: 50px
+      line-height: 38px
+    &-slider
+      max-width: 579px
+      margin: auto
+      &__text
+        max-width: 455px
   .card1
     &-right
       padding: 26px 20px 20px 23px
@@ -61,7 +75,8 @@
       &__link
         font-size: 12px
         line-height: 15px
-        outline: hidden
+        &::after
+          background-color: #0A223D
   .search
     &__input
       width: 340px
@@ -82,6 +97,8 @@
   .newsletter
     padding: 92px 0 93px 0
   .activities
+    padding-top: 55px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -90,20 +107,28 @@
     width: 49%
     height: 255px
   .footer
+    &__title
+      &--mb-4
+        margin-top: 15px
+      &--mb-3
+        margin-top: -5px
     &__inf
       margin-left: 0
     &-wrapper
       grid-template-columns: repeat(6, 1fr )
-      grid-row-gap: 40px
+      grid-row-gap: 48px
+      grid-column-gap: 0
     &__input
       &-group
         flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
-      width: 104px
-      height: 120px
+      width: 95px
+      height: 110px
     &__social
+      &-links
+        margin-top: 6px
       &-network
         grid-row: 1 / 2
         grid-column: span 4
@@ -207,6 +232,29 @@
       cursor: default
       &:hover
         opacity: 1
+  .footer
+    &__link
+      &:hover
+        color: $footer-text-color
+  .hotel
+    padding-bottom: 60px
+  .footer
+    padding-top: 73px
+    &__legal
+      margin-left: 13%
+    &__additional
+      width: 246px
+      margin-left: -35px
+    &__categories
+      width: 178px
+    &__social-network
+      margin-left: -50px
+    &__contact-form
+      max-width: 539px
+    &__bottom
+      margin-top: 57px
+    &__inf
+      text-align: left
 @media (max-width: 890px)
   .container,
   .newsletter-wrapper
@@ -241,32 +289,12 @@
       align-items: start
     &__info
       margin-bottom: 15px
+
 @media (max-width: 840px)
   .container,
   .newsletter-wrapper
     max-width: 700px
-  .hotel
-    padding-bottom: 60px
-  .activities
-    padding-bottom: 55px
-  .footer
-    padding-top: 73px
-    &__logo
-      width: 104px
-      height: 120px
-    &__legal
-      margin-left: 13%
-    &__additional
-      width: 246px
-      margin-left: -35px
-    &__categories
-      width: 178px
-    &__social-network
-      margin-left: -50px
-    &__contact-form
-      max-width: 539px
-    &__bottom
-      margin-top: 63px
+
   .card1
     &-right
       padding: 26px 20px 20px 23px
@@ -316,14 +344,10 @@
   .other-4,
   .other-5
     width: 100%
-@media (max-width: 768px)
+@media (max-width: 767px)
   .newsletter
     &-wrapper
       width: 90%
-  .reviews
-    &__title
-      font-size: 30px
-      margin-bottom: 50px
     &-slider
       &__item
         max-width: 579px
@@ -343,9 +367,6 @@
       min-width: 170px
     &__form
       min-width: 170px
-  .other-packages
-    &__title
-      font-size: 30px
   .card2
     &-top
       height: 200px
@@ -484,8 +505,6 @@
     &__input
       &-group
         flex-basis: 100%
-    &__inf
-      text-align: left
 
 @media (max-width: 680px)
   .newsletter
@@ -580,7 +599,9 @@
         margin-top: 20px
     &__link
       margin-right: 10px
-
+    &__title
+      &--mb-3
+        margin-top: 5px
     &__additional
       grid-row: 4
       grid-column: 1
@@ -590,6 +611,7 @@
     &__legal
       grid-row: 3
       grid-column: 1
+      margin-top: -5px
     &__contact
       &-details
         grid-row: 6
@@ -606,7 +628,7 @@
     &-slider
       min-height: 180px
   .activities
-    padding-top: 40px
+    padding-top: 45px
     padding-bottom: 45px
     margin: 0
   .card
@@ -669,7 +691,7 @@
       min-height: 40px
   .navbar
     &-bottom
-      top: 73px
+      top: 68px
     &__search
       &--mobile
         &--visible
@@ -727,9 +749,9 @@
     &__title
       &--mb-4
         margin-bottom: 26px
+        margin-top: 0
       &--mb-3
         margin-bottom: 18px
-        margin-top: 5px
   .container
     width: 87%
   .logo
