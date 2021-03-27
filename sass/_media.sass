@@ -33,10 +33,18 @@
       margin-bottom: 50px
       line-height: 38px
     &-slider
-      max-width: 579px
       margin: auto
       &__text
         max-width: 455px
+      &__item
+        max-width: 579px
+      &__button
+        &--prev
+          left: 0px
+          top: 172px
+        &--next
+          top: 172px
+          right: 0px
   .card1
     &-right
       padding: 26px 20px 20px 23px
@@ -67,7 +75,7 @@
     &__search
       margin-left: 48px
     &-menu
-      padding-top: 22px
+      padding-top: 0
       padding-left: 20px
       padding-right: 20px
       padding-bottom: 22px
@@ -408,7 +416,7 @@
       right: 0
       bottom: 0
       top: 78px
-      padding-top: 30px
+      padding-top: 35px
 
       &--visible
         display: block
@@ -416,12 +424,14 @@
 
     &-menu
       flex-direction: column
-
       &__item
-        margin-bottom: 20px
+        margin-bottom: 15px
         &--mobile
           &--visible
             display: block
+      &__search
+        margin-bottom: 39px
+
   .newsletter
     &__subscribe
       &--mobile
@@ -455,6 +465,7 @@
         color: $light
         margin-left: 0
         margin-top: 10px
+        margin-bottom: 7px
   .stars
     flex-basis: auto
   .hotel
@@ -517,7 +528,28 @@
       width: 87%
       align-items: flex-start
 @media (max-width: 576px)
-
+  .activities
+    &-wrapper
+      display: grid
+      grid-template-columns: 100%
+    &__card2
+      grid-row: 3/4
+    &__card3
+      grid-row: 2/3
+  .star
+    &-hotel
+      margin-right: -2px
+  .stars
+    margin-right: 17px
+  .hotel
+    &-slider
+      &__button
+        width: 11px
+        height: 8px
+        &--prev
+          left: 8px
+        &--next
+          right: 8px
   .reviews
     padding: 40px 0 0 0
     &-slider

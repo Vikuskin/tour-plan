@@ -233,11 +233,20 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="https://ru-ru.facebook.com/" class="footer__link"
+              <a
+                href="https://ru-ru.facebook.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebook" /></a
-              ><a href="https://www.youtube.com/" class="footer__link"
+              ><a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/youtube.svg" alt="Icon: youtube" /></a
-              ><a href="https://www.instagram.com/" class="footer__link"
+              ><a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
@@ -288,16 +297,25 @@
                   />
                 </div>
                 <div class="footer-tel">
-                  <a href="tel:2691500" class="footer__link"
-                    >Tel (business hours) : 269 1500</a
+                  <span
+                    >Tel (business hours) :
+                    <a href="tel:2691500" class="footer__link"
+                      >269 1500</a
+                    ></span
                   >
-                  <a href="tel:52566138" class="footer__link"
-                    >Tel (hotline) Monday - Saturday: 52-56-61-38
-                    (08:00&nbsp;am&nbsp;–&nbsp;20:00&nbsp;pm)</a
+                  <span
+                    >Tel (hotline) Monday - Saturday:<a
+                      href="tel:52566138"
+                      class="footer__link"
+                    >
+                      52&#8209;56&#8209;61&#8209;38 </a
+                    >(08:00&nbsp;am&nbsp;–&nbsp;20:00&nbsp;pm)</span
                   >
-                  <a href="tel:52566138" class="footer__link"
-                    >Tel (hotline) Sunday: 52-56-61-38
-                    (08:00&nbsp;am&nbsp;–&nbsp;14:00&nbsp;pm)</a
+                  <span
+                    >Tel (hotline) Sunday:
+                    <a href="tel:52566138" class="footer__link"
+                      >52&#8209;56&#8209;61&#8209;38 </a
+                    >(08:00&nbsp;am&nbsp;–&nbsp;14:00&nbsp;pm)</span
                   >
                 </div>
               </li>
@@ -377,9 +395,13 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -7,8 +7,9 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -90,7 +91,9 @@
                 <span class="user__name user__name--light">Nathan</span>
               </a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <li
+              class="navbar-menu__item navbar-menu__search navbar-menu__item--mobile--visible"
+            >
               <form
                 action="#"
                 class="search navbar__search navbar__search--mobile--visible"
@@ -152,11 +155,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" class="star-hotel" />
+                <img src="img/star.svg" alt="Star" class="star-hotel" />
+                <img src="img/star.svg" alt="Star" class="star-hotel" />
+                <img src="img/star.svg" alt="Star" class="star-hotel" />
+                <img src="img/star.svg" alt="Star" class="star-hotel" />
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -566,10 +569,10 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
+                    <img src="img/star.svg" alt="Star" class="star-reviews" />
+                    <img src="img/star.svg" alt="Star" class="star-reviews" />
+                    <img src="img/star.svg" alt="Star" class="star-reviews" />
+                    <img src="img/star.svg" alt="Star" class="star-reviews" />
                     <img src="img/star.svg" alt="Star" />
                   </div>
                   <!--rating-->
@@ -672,9 +675,8 @@
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
           <div
-            class="card activities__card"
+            class="card activities__card activities__card1"
             data-aos="fade-up"
-            data-aos-delay="100"
           >
             <img
               src="img/activity-1.jpg"
@@ -694,9 +696,8 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card activities__card2"
             data-aos="fade-up"
-            data-aos-delay="300"
           >
             <img
               src="img/activity-2.jpg"
@@ -714,9 +715,8 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card activities__card3"
             data-aos="fade-up"
-            data-aos-delay="500"
           >
             <img
               src="img/activity-3.jpg"
@@ -736,9 +736,8 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card activities__card4"
             data-aos="fade-up"
-            data-aos-delay="700"
           >
             <img
               src="img/activity-4.jpg"
@@ -830,11 +829,20 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="https://ru-ru.facebook.com/" class="footer__link"
+              <a
+                href="https://ru-ru.facebook.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebook" /></a
-              ><a href="https://www.youtube.com/" class="footer__link"
+              ><a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/youtube.svg" alt="Icon: youtube" /></a
-              ><a href="https://www.instagram.com/" class="footer__link"
+              ><a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
@@ -885,17 +893,25 @@
                   />
                 </div>
                 <div class="footer-tel">
-                  <a href="tel:2691500" class="footer__link"
-                    >Tel (business hours) : 269 1500</a
+                  <span
+                    >Tel (business hours) :
+                    <a href="tel:2691500" class="footer__link"
+                      >269 1500</a
+                    ></span
                   >
-                  <a href="tel:52566138" class="footer__link"
-                    >Tel (hotline) Monday - Saturday:
-                    52&#8209;56&#8209;61&#8209;38
-                    (08:00&nbsp;am&nbsp;–&nbsp;20:00&nbsp;pm)</a
+                  <span
+                    >Tel (hotline) Monday - Saturday:<a
+                      href="tel:52566138"
+                      class="footer__link"
+                    >
+                      52&#8209;56&#8209;61&#8209;38 </a
+                    >(08:00&nbsp;am&nbsp;–&nbsp;20:00&nbsp;pm)</span
                   >
-                  <a href="tel:52566138" class="footer__link"
-                    >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38
-                    (08:00&nbsp;am&nbsp;–&nbsp;14:00&nbsp;pm)</a
+                  <span
+                    >Tel (hotline) Sunday:
+                    <a href="tel:52566138" class="footer__link"
+                      >52&#8209;56&#8209;61&#8209;38 </a
+                    >(08:00&nbsp;am&nbsp;–&nbsp;14:00&nbsp;pm)</span
                   >
                 </div>
               </li>
