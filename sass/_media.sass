@@ -38,6 +38,9 @@
         max-width: 455px
       &__item
         max-width: 579px
+        &::after,
+        &::before
+          display: none
       &__button
         &--prev
           left: 0px
@@ -555,9 +558,6 @@
     &-slider
       &__item
         padding: 0 30px 30px
-        &::after,
-        &::before
-          display: none
       &__text
         max-width: 455px
       &__button
